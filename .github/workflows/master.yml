@@ -10,6 +10,14 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
+
+    - name: npm install
+      run: |
+        npm install
+
+    - name: npm run build
+      run: |
+        npm run build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
@@ -17,4 +25,5 @@ jobs:
         server: sg1-ss18.a2hosting.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
+        local-dir: ./dist/
         server-dir: /deploy.zhangyu.uk/
