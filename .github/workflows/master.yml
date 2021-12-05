@@ -17,4 +17,4 @@ jobs:
         server: sg1-ss18.a2hosting.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /home/zhangyuu/deploy.zhangyu.uk
+        server-dir: /home/zhangyuu/deploy.zhangyu.uk/
