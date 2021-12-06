@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h3>測試部屬</h3>
+    <h3>修改幻境變數</h3>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
